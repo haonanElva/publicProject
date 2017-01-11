@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>2017一起人生不断电</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" type="text/css" href="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/css/loading.css">
+</head>
+<body>
+    <div>
+        <div id="loading_page">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+        <h2 id="music" class="music rotatePic">
+            <audio id="audio" autoplay>
+                <!-- <source src="bg.mp3" type="audio/mp3"> -->
+            </audio>
+        </h2>
+        <div id="page_content" class="page page-1 page-current hide" >
+            <div class="wrap">
+                <img class="phoneimg pt-page- hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/phoneBd.png">
+                <img class="message_1 pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/pageOne-1.png">
+                <img class="message_2 pt-page-appear pt-page-delay1000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/pageTwo-2.png">
+                <img class="message_3 pt-page-appear pt-page-delay2000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/pageOne-3.png">
+                <img class="message_4 pt-page-appear pt-page-delay3000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/pageOne-4.png">
+                <img class="yueyueyue pt-page-scaleUpDown pt-page-delay5000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/waitePhone.png">
+                <img class="plusbutton pt-page-fade pt-page-delay6000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/send.png">
+                <img id="yuebutton" class="sendbutton pt-page-scaleUpDown-infinite pt-page-delay7000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/images/1-message-button.png">
+                	<img class="handMoveOne handMovePage" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/handMove.png" />
+                <div id="nopowerphonewrap" class="hide pt-page-scaleDownCenter pt-page-delay1500">
+                    <img id="nopowerphone" class="nopowerphoneimg pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/noPower.png">
+                </div>
+                <img id="powerline" class="pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/powerLine.png">
+                <img id="continuepower" class="pt-page-moveIconUp pt-page-delay2000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/1-continueword.png">
+            </div>
+        </div>
+        <div class="page page-2 hide" >
+                <img class="backgroundimg pt-page-moveFromBottom hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/bigBackground.jpg">
+                <img class="holdphone pt-page-moveFromRightFade pt-page-delay1000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/handBd.png">
+                	<!--<div class="page_bd ">
+                		<div>
+                			<img class="pt-page-moveFromRightFade pt-page-delay1500 " src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/nvshen.jpg" />
+                		</div>
+                	</div>-->
+                	<!-- 相机 -->
+                	<div class="phone_box pt-page-fadeIn hide pt-page-delay2000"></div>
+                <img class="photodiv pt-page-appear pt-page-delay3000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/images/2-photo-div.png">
+                <img id="photobutton" class="pt-page-appear pt-page-delay3000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/images/2-photo-button.png">
+                	<img class="handMoveTwo handMovePage hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/handMove.png">
+                <img class="nopowerphoneimg pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/noPower.png">
+                <img class="powerline pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/powerLine.png">
+                <img class="continuepower pt-page-moveIconUp pt-page-delay2000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/1-continueword.png">
+        </div>
+        <div class="page page-3 hide" >
+
+
+            <img class="phoneimg pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/thirdBd.png">
+            <img class="lucktable pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/luck_table.png">
+            <img class="luckpointer pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/images/3-luck-pointer.png">
+            <img id="luckbutton" class="pt-page-appear pt-page-delay5000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/getPrice.png">
+            	<img class="handMoveThree handMovePage hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/handMove.png">
+            <img class="nopowerphoneimg pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/noPower.png">
+            <img class="powerline pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/powerLine.png">
+            <img class="continuepower pt-page-moveIconUp pt-page-delay2000 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/1-continueword.png">
+        </div>
+        <div class="page page-4 hide" >
+        		<div class="title pt-page-appear pt-page-delay700">2017一起人生不断电</div>
+        		<!--<div class="doublebat pt-page-appear pt-page-delay700 hide" style="text-align: center;font-size: 20px;color: #fff;">乐乐达原装电池<br>只要99元起</div>-->
+            <!--<img class="doublebat pt-page-appear pt-page-delay700 hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/css/4-ad-luoyi.png">-->
+            <div class="alwayspower pt-page-appear pt-page-delay1500 hide" style="text-align: center;font-size: 20px;color: #fff;">乐乐达原装苹果电池<br>只要99元起</div>
+            <img class="adphone pt-page-appear hide" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/lastBd.png">
+            	<input class="phone_ipt pt-page-moveFromRightCool pt-page-delay3000" type="number" placeholder="输手机号领30元到店优惠" />
+            <a class="buynow pt-page-moveFromRightCool pt-page-delay3000" href="javascript:;">领取</a>
+            <h3 class="bottom_desc pt-page-moveFromRightCool pt-page-delay3000">凡2017年1月1日到1月10日到店的用户<br>随机抽取30%用户免单<br>免单采取支付宝打回<br>参加活动请使用支付宝在APP内付款哦！</h3>
+            <div class="dailog_modle">
+            		<p>
+	            		点击右上角将优惠分享给朋友<br />
+	            		您可通过登录乐乐达微信号在个人中心查看您的优惠<br />
+            		</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/js/zepto.min.js"></script>
+    <script type="text/javascript" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/js/touch.js"></script>
+    <script type="text/javascript" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/js/index.js"></script>
+    <script type="text/javascript" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/js/step2.js"></script>
+    <script type="text/javascript" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/js/step3.js"></script>
+    <script type="text/javascript" src="http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/js/step4.js"></script>
+    <script>
+
+    window.onload =function (){
+        $('#audio').attr('src',"http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/bgSmall.mp3");
+    }
+    </script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+	window.sysinfo = window.sysinfo || {"uniacid":4,"acid":4,"siteroot":"http:\/\/2018.leleda.com\/","siteurl":"http:\/\/2018.leleda.com\/app\/index.php?i=4&c=entry&do=index&m=leleda_phone&from=timeline&isappinstalled=0","attachurl":"http:\/\/2018.leleda.com\/attachment\/","cookie":{"pre":"6a35_"},"MODULE_URL":"http:\/\/2018.leleda.com\/addons\/leleda_phone\/"} || {};
+	
+	// jssdk config 对象
+	jssdkconfig = null || {};
+	
+	// 是否启用调试
+	jssdkconfig.debug = false;
+	
+	jssdkconfig.jsApiList = [
+		'checkJsApi',
+		'onMenuShareTimeline',
+		'onMenuShareAppMessage',
+		'onMenuShareQQ',
+		'onMenuShareWeibo',
+		'hideMenuItems',
+		'showMenuItems',
+		'hideAllNonBaseMenuItem',
+		'showAllNonBaseMenuItem',
+		'translateVoice',
+		'startRecord',
+		'stopRecord',
+		'onRecordEnd',
+		'playVoice',
+		'pauseVoice',
+		'stopVoice',
+		'uploadVoice',
+		'downloadVoice',
+		'chooseImage',
+		'previewImage',
+		'uploadImage',
+		'downloadImage',
+		'getNetworkType',
+		'openLocation',
+		'getLocation',
+		'hideOptionMenu',
+		'showOptionMenu',
+		'closeWindow',
+		'scanQRCode',
+		'chooseWXPay',
+		'openProductSpecificView',
+		'addCard',
+		'chooseCard',
+		'openCard'
+	];
+	
+	wx.config(jssdkconfig);
+	
+</script>    
+<script>
+    var shareFriendData;
+    var shareTimelineData;
+    wx.ready(function () {
+
+        shareFriendData = {
+            title : "2017不断电，苹果原装电池免费换",
+            // link : "http://m.mall.leleda.com/home",
+            link : "http://2018.leleda.com/app/index.php?i=4&c=entry&do=index&m=leleda_phone",
+            desc : '苹果官方授权经销商，乐乐达电池更换大优惠，不排队，不取号，不预约，到店直接换，任性满满的一起人生不断电',
+            imgUrl :"http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/Leledalogo.png",
+            success: function(){
+                // alert('success');
+            },
+            cancel: function(){
+                // alert('cancel');
+            }
+        };
+
+        shareTimelineData = {
+            title : "2017不断电，苹果原装电池免费换",
+            // link : "http://m.mall.leleda.com/home",
+            link : "http://2018.leleda.com/app/index.php?i=4&c=entry&do=index&m=leleda_phone",
+            desc : '苹果官方授权经销商，乐乐达电池更换大优惠，不排队，不取号，不预约，到店直接换，任性满满的一起人生不断电',
+            imgUrl :"http://leleda-resource.oss-cn-qingdao.aliyuncs.com/leleda_phone/img/Leledalogo.png",
+            success: function(){
+                // alert('success');
+            },
+            cancel: function(){
+                // alert('cancel');
+            }
+        };
+
+        wx.onMenuShareTimeline(shareTimelineData);
+        wx.onMenuShareAppMessage(shareFriendData);
+    });
+    </script>
+
+</body>
+</html>
