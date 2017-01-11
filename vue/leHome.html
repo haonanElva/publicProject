@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>乐乐达拆机教程_首页</title>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="icon" href="../favicon.ico">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/common/weui.css">
+		<link rel="stylesheet" href="../../css/common/jquery-weui.css">
+		<link rel="stylesheet" href="../../css/common/swiper.min.css">
+		<link rel="stylesheet" href="../../css/common/common.css">
+		
+		<link rel="stylesheet" href="../../css/m/home.css">
+		<link rel="stylesheet" href="../../css/m/footr.css">
+		
+		<script src="../../js/vue.js"></script>
+		<script src="../../js/isPc.js"></script>
+		<script>
+	        var isPC = isPC();
+	        if(!isPC){
+	           //window.location.href = 'leHome.html';
+	        }else{
+	        		
+	        }
+	    </script>
+	</head>
+	<body ontouchstart>
+		<!---  主体开始  --->
+		<section id="home_container">
+			<!--  顶部轮播  -->
+			<div class="swiper-container" id="home_banner">
+				<div class="swiper-wrapper">
+					 <div class="swiper-slide" v-for="todo in todos">
+						<img :src="todo.src">
+					 </div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--  顶部轮播结束  -->
+			
+			<!-- tap切换  -->
+			<div class="weui-row tap_choose">
+				<div class="weui-col-50 active">精选教程</div>
+				<div class="weui-col-50">维修配件</div>
+			</div>
+			<!----   精选教程     ----->
+			<div class="featured" >
+				<div class="one weui-row" style="width: 100%;" >
+					<div class="weui-col-50 hot_list_shop" v-for="row in infors">
+						<a :href="row.id">
+							<dl class="video_list">
+								<dt>
+									<img :src="row.src">
+									<h3 class="veduo_logo"></h3>
+								</dt>
+								<dd>
+									<h3 class="shop_name le_ellipsis">{{row.name}}</h3>
+									<h3 class="shop_description">{{row.playCount}}</h3> 
+								</dd>
+							</dl>
+						</a>
+					</div>
+				</div>
+				
+				<div class="check_more">
+					<h3>
+						<a href="listVedio.html">查看更多</a> 
+					</h3>
+					<h4 class="line"></h4>
+				</div>
+				
+			</div>
+			<!----   精选教程结束     ----->
+			
+			<!----   维修配件     ----->
+			<div class="accessories" style="display: none;">
+				<div class="two weui-row" style="width: 100%;">
+					<div class="weui-col-50 hot_list_shop" v-for="product in products">
+						<a href="#">
+							<dl class="shop_show_box">
+								<dt>
+									<h3>
+										<img :src="product.src">
+									</h3>
+								</dt>
+								<dd>
+									<h3 class="shop_name le_ellipsis">{{product.name}}</h3>
+									<div class="bottom_det">
+										<h3 class="shop_price">
+											<span class="small_price">￥</span>
+											<span>{{product.price}}</span>
+										</h3>
+										<h4 class="soled_out">已售：{{product.id}}</h4>
+									</div>
+								</dd>
+							</dl>
+						</a>
+					</div>
+				</div>
+				
+				<div class="check_more">
+					<h3>
+						<a href="listAccessories.html">查看更多</a> 
+					</h3>
+					<h4 class="line"></h4>
+				</div>
+				
+			</div>
+			<!----   维修配件 结束     ----->
+		
+			<!-- 底部 切换 -->
+			<div class="weui_tabbar">
+		        <a href="leHome.html" class="weui_tabbar_item active">
+				    <div class="weui_tabbar_icon">
+				        <img class="pic" src="../../img/m/Group11.png" alt="">
+				        <img class="active_pic" src="../../img/m/Group11-.png" alt="">
+				    </div>
+				    <p class="weui_tabbar_label">首页</p>
+				</a>
+				<a href="listAccessories.html" class="weui_tabbar_item">
+				    <div class="weui_tabbar_icon">
+				        <img class="pic" src="../../img/m/Group10.png" alt="">
+				        <img class="active_pic" src="../../img/m/Group10-.png" alt="">
+				    </div>
+				    <p class="weui_tabbar_label">维修配件</p>
+				</a>
+				<a href="http://m.weixiu.leleda.com/" class="weui_tabbar_item">
+				    <div class="weui_tabbar_icon">
+				        <img class="pic" src="../../img/m/Group10Copy.png" alt="">
+				        <img class="active_pic" src="../../img/m/Group10Copy-.png" alt="">
+				    </div>
+				    <p class="weui_tabbar_label">上门快修</p>
+				</a>
+				<a href="/cart/list" class="weui_tabbar_item">
+				    <div class="weui_tabbar_icon">
+				        <img class="pic" src="../../img/m/Group9.png" alt="">
+				        <img class="active_pic" src="../../img/m/Group9-.png" alt="">
+				    </div>
+				    <p class="weui_tabbar_label">购物车</p>
+				</a>
+				 <a href="http://account.leleda.com/account/personCenter/content" class="weui_tabbar_item">
+				    <div class="weui_tabbar_icon">
+				        <img class="pic" src="../../img/m/Group12.png" alt="">
+				        <img class="active_pic" src="../../img/m/Group12-.png" alt="">
+				    </div>
+				    <p class="weui_tabbar_label">个人中心</p>
+				</a>
+		    </div>
+		</section>
+		
+		<!--   -->
+		<script src="../../js/jquery-2.1.4.js"></script>
+		<script src="../../js/swiper.jquery.min.js"></script>
+		<script src="../../js/lib/fastclick.js"></script>
+		<script src="../../js/lib/jquery-weui.js"></script>
+		<!-- 加载动画 -->
+		<script src="../../js/loading.js"></script>
+		<script src="../../js/m/homeM.js"></script>
+		<script>
+			$(function(){
+				//底部tab切换
+				$('.weui_tabbar').children("a").click(function(){
+					$(this).addClass("active").siblings("a").removeClass("active");
+				});
+			});
+	
+		</script>		
+	</body>
+</html>
